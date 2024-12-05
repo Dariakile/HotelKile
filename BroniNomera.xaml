@@ -1,0 +1,23 @@
+﻿<Page x:Class="HotelKile.BroniNomera"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HotelKile"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="400"
+      Title="BroniNomera">
+
+    <Grid Background="LemonChiffon">
+        <StackPanel Grid.RowSpan="2" Grid.Column="4" Background="LemonChiffon">
+            <Label Content="Гарантия лучшей цены" FontSize="28" HorizontalContentAlignment="Center"/>
+            <Label Content="Бронирование номеров" FontSize="32" HorizontalContentAlignment="Center" Background="Yellow" Height="60"/>
+            <DatePicker SelectedDateFormat="Long" x:Name="Zaezd" FontSize="18" Margin="5"/>
+            <DatePicker SelectedDateFormat="Long" x:Name="Viezd" FontSize="18" Margin="5"/>
+            <ComboBox Text="Кол-во гостей" Margin="5"/>
+            <Button x:Name="NaitiNomer" Content="Найти номер" FontSize="24" Background="LemonChiffon" BorderThickness="3" 
+                    Margin="5" Click="NaitiNomer_Click"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>
